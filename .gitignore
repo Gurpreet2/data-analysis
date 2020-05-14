@@ -1,6 +1,7 @@
 # IDE/env files
 /.idea
 /venv
+/data
 
 # Python files
 *.pyc
