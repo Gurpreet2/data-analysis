@@ -1,5 +1,5 @@
 from model.datasets import DataCollection
-from config.settings import max_directory_traverse
+from config.settings import max_directory_traverse, excluded_files
 import csv
 from pathlib import Path, PosixPath
 from os.path import normpath
@@ -48,6 +48,8 @@ def get_every_file_in_dir(root_directory: str) -> [PosixPath]:
             raise RecursionError(f'Maximum allowed directory count traversed ({max_directory_traverse}). '
                                  f'At least {len(directories) - i} more directories remaining.')
         for item in directories[i].iterdir():
+            if item.name in excluded_files:
+                continue
             if item.is_dir():
                 directories.append(item)
             else:
