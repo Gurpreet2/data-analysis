@@ -1,17 +1,2 @@
-# IDE/env files
+# IDE files
 /.idea
-/venv
-
-# Python files
-*.pyc
-__pycache__
-
-# Misc
-local.txt
-
-# Application
-/data/*
-!/data/app
-!/data/local
-/data/local/*
-!/data/local/example.csv

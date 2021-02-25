@@ -1,0 +1,14 @@
+
+.RadioSelection {
+  width: 50%;
+  padding: 5px;
+  margin: auto 0px;
+}
+
+.RadioSelectionSpan {
+  margin: auto 30px auto 0px;
+}
+
+.RadioSelectionInput {
+  margin-right: 8px;
+}
